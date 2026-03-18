@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>SCIVANT - Centro de Asesoría de Tesis</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/scivant.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&family=Work+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<script>
+function abrirWhatsApp(){
+
+    var mensaje = document.getElementById("mensajeUsuario").value;
+
+    if(mensaje === ""){
+        mensaje = "Hola, quisiera información sobre asesoría académica.";
+    }
+
+    var telefono = "51929529499"; // 
+
+    var url = "https://wa.me/" + telefono + "?text=" + encodeURIComponent(mensaje);
+
+    window.open(url, "_blank");
+}
+</script>
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-lg-5">
+            <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+                <h2 class="mb-0 text-primary text-uppercase"></i>SCIVANT</h2>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link">Inicio</a>
+                    <a href="about.html" class="nav-item nav-link active">Nosotros</a>
+                    <a href="service.html" class="nav-item nav-link">Servicios</a>                                 
+                    <a href="contact.html" class="nav-item nav-link">Contáctanos</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="page-header pb-5">
+    <div class="container text-center py-5">
+        <h1 class="display-4 text-uppercase mb-3 animated slideInDown">Sobre Nosotros</h1>
+
+        <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb justify-content-center text-uppercase mb-0">
+                <li class="breadcrumb-item">
+                    <a class="text-white" href="index.html">Inicio</a>
+                </li>
+
+                <li class="breadcrumb-item text-primary active" aria-current="page">
+                    Sobre Nosotros
+                </li>
+            </ol>
+        </nav>
+
+    </div>
+</div>
+    <!-- Header End -->
+
+
+    <!-- About Start -->
+<div class="container-fluid">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+
+            <div class="col-lg-7 py-5">
+
+                <div class="title">
+                    <div class="title-left">
+                        <h5>SCIVANT</h5>
+                        <h1>Sobre Nosotros</h1>
+                    </div>
+                </div>
+
+                <p class="mb-4">
+                    SCIVANT es un centro de asesoría académica especializado en el 
+                    desarrollo de tesis y trabajos de investigación. Nuestro objetivo 
+                    es acompañar a estudiantes y profesionales durante cada etapa del 
+                    proceso de investigación, brindando orientación metodológica, 
+                    apoyo en redacción académica y asesoría personalizada.
+                </p>
+
+                <ul class="list-group list-group-flush mb-5">
+
+                    <li class="list-group-item bg-dark text-body border-secondary ps-0">
+                        <i class="fa fa-check-circle text-primary me-1"></i>
+                        Asesoría en tesis de pregrado y posgrado
+                    </li>
+
+                    <li class="list-group-item bg-dark text-body border-secondary ps-0">
+                        <i class="fa fa-check-circle text-primary me-1"></i>
+                        Apoyo en metodología de investigación
+                    </li>
+
+                    <li class="list-group-item bg-dark text-body border-secondary ps-0">
+                        <i class="fa fa-check-circle text-primary me-1"></i>
+                        Revisión y mejora de redacción académica
+                    </li>
+
+                </ul>
+
+                <div class="row">
+                    <div class="col-6">
+                        <a href="contact.html" class="btn btn-outline-primary border-2 py-3 w-100">
+                            Contactar
+                        </a>
+                    </div>
+
+                    <div class="col-6">
+                        <a href="service.html" class="btn btn-primary py-3 w-100">
+                            Nuestros Servicios
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-5">
+                <img class="img-fluid" src="img/about.png" alt="SCIVANT">
+            </div>
+
+        </div>
+    </div>
+</div>
+    <!-- About End -->
+
+
+     <!-- Banner Start -->
+<div class="container-fluid py-5 bg-secondary">
+    <div class="container py-5">
+        <div class="row g-0 justify-content-center">
+            <div class="col-lg-7 text-center">
+
+                <div class="title mx-5 px-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="title-center">
+                        <h5>CONSULTA ACADÉMICA</h5>
+                        <h1>¿Necesitas apoyo con tu investigación?</h1>
+                    </div>
+                </div>
+
+                <p class="fs-5 mb-5 wow fadeInUp" data-wow-delay="0.2s">
+                    Escríbenos y te contactaremos por WhatsApp para brindarte información
+                    sobre nuestras asesorías académicas.
+                </p>
+
+                <div class="position-relative wow fadeInUp" data-wow-delay="0.3s">
+
+                    <input id="mensajeUsuario"
+                        class="form-control border-0 bg-dark rounded-pill w-100 py-4 ps-4 pe-5"
+                        type="text"
+                        placeholder="Escribe tu consulta aquí">
+
+                    <button onclick="abrirWhatsApp()"
+                        class="btn btn-primary py-3 px-4 position-absolute top-0 end-0 me-2"
+                        style="margin-top:7px;">
+                        Contactar
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Banner End -->
+
+<!-- Beneficios Start -->
+<div class="container-fluid py-5">
+<div class="container py-5">
+
+<div class="text-center mb-5">
+<h5>Beneficios</h5>
+<h1>¿Por qué elegir SCIVANT?</h1>
+</div>
+
+<div class="row g-4">
+
+<!-- 1. ASESORÍA PERSONALIZADA -->
+<div class="col-lg-3 col-md-6">
+<div class="team-item">
+<div class="team-body">
+
+<div class="team-before">
+<span>Asesoría</span>
+<span>Orientación</span>
+<span>Seguimiento</span>
+</div>
+
+<img class="img-fluid" src="img/b1.png" alt="">
+
+<div class="team-after">
+<span>para tesis</span>
+<span>metodológica</span>
+<span>continuo</span>
+</div>
+
+</div>
+
+<a class="team-name" href="#">
+<h5 class="text-uppercase mb-0">Asesoría Personalizada</h5>
+</a>
+
+</div>
+</div>
+
+<!-- 2. METODOLOGÍA -->
+<div class="col-lg-3 col-md-6">
+<div class="team-item">
+<div class="team-body">
+
+<div class="team-before">
+<span>Planteamiento</span>
+<span>Desarrollo</span>
+<span>Diseño</span>
+<span>Formulación</span>
+</div>
+
+<img class="img-fluid" src="img/b2.png" alt="">
+
+<div class="team-after">
+<span>del problema</span>
+<span>marco teórico</span>
+<span>metodológico</span>
+<span>de hipótesis</span>
+</div>
+
+</div>
+
+<a class="team-name" href="#">
+<h5 class="text-uppercase mb-0">Metodología de Investigación</h5>
+</a>
+
+</div>
+</div>
+
+<!-- 3. REDACCIÓN ACADÉMICA -->
+<div class="col-lg-3 col-md-6">
+<div class="team-item">
+<div class="team-body">
+
+<div class="team-before">
+<span>Redacción</span>
+<span>Corrección</span>
+<span>Aplicación</span>
+<span>Mejora</span>
+</div>
+
+<img class="img-fluid" src="img/b3.png" alt="">
+
+<div class="team-after">
+<span>de tesis</span>
+<span>de estilo</span>
+<span>de normas APA</span>
+<span>de estructura</span>
+</div>
+
+</div>
+
+<a class="team-name" href="#">
+<h5 class="text-uppercase mb-0">Redacción Académica</h5>
+</a>
+
+</div>
+</div>
+
+<!-- 4. ANÁLISIS DE DATOS -->
+<div class="col-lg-3 col-md-6">
+<div class="team-item">
+<div class="team-body">
+
+<div class="team-before">
+<span>Análisis</span>
+<span>Interpretación</span>
+<span>Elaboración</span>
+</div>
+
+<img class="img-fluid" src="img/b4.png" alt="">
+
+<div class="team-after">
+<span>de datos</span>
+<span>de resultados</span>
+<span>de gráficos</span>
+</div>
+
+</div>
+
+<a class="team-name" href="#">
+<h5 class="text-uppercase mb-0">Análisis de Datos</h5>
+</a>
+
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<!-- Beneficios End -->
+
+
+ <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-5">
+            <a href="index.html">
+                <h1 class="display-4 mb-3 text-white text-uppercase"><i
+                        class=></i>SCIVANT</h1>
+            </a>
+            <div class="d-flex justify-content-center mb-4">
+                <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="https://www.tiktok.com/@scivant.per"><i
+                        class="fab fa-tiktok"></i></a>
+                <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="https://www.instagram.com/scivant.peru/"><i
+                        class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; <a class="border-bottom" href="#">SCIVANT</a>, Todos los derechos reservados.</p>
+
+            <!--/*** The author’s attribution link must remain intact in the template. ***/-->
+            <!--/*** If you wish to remove this credit link, please purchase the Pro Version . ***/-->
+            <p class="mb-0">Huánuco, Perú | Asesoría académica en investigación </a>.</p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-outline-primary border-2 btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
